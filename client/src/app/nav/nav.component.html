@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #222a3f;">
+
+  <div class="container">
+    <img src="assets/neurometlogo.ico" alt="NeuroMet Logo" width="60" height="60" class="d-inline-block align-top mr-2">
+      <a class="navbar-brand" routerLink='/'>
+        NeuroMet
+      </a>
+
+        <ul class="navbar-nav mr-auto">
+            <ng-container *ngIf="accountService.currentUser$ | async; else anonymousUser">
+              <li class="nav-item">
+                <a class="nav-link" routerLink='/users' routerLinkActive='active'>Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink='/generateProgram' routerLinkActive='active'>Generate Program</a>
+              </li>
+            </ng-container>
+          
+            <ng-template #anonymousUser>
+              <li class="nav-item">
+                <a class="nav-link" routerLink='/registration' routerLinkActive='active'>Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink='/program' routerLinkActive='active'>Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink='/contact' routerLinkActive='active'>Contact</a>
+              </li>
+            </ng-template>
+          </ul>
+
+        <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as user" dropdown>
+            <a class="dropdown-toggle text-light" dropdownToggle>Welcome {{user.username | titlecase}}</a>
+            <div class="dropdown-menu mt-3" *dropdownMenu>
+                <a class="dropdown-item">Edit Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" (click)="logout()" >Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>

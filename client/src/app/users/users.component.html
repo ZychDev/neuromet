@@ -1,0 +1,115 @@
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center vh-100">
+    <div class="col-20 col-lg-20 col-xl-20">
+      <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+        <div class="card-body p-3 p-md-3 text-center">
+          <div class="users-container" style="max-height: 600px; max-width: 1000px; overflow-y: auto;">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Second Name</th>
+                  <th>Email</th>
+                  <th>University</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let user of users">
+                  <td>{{ user.firstName }}</td>
+                  <td>{{ user.secondName }}</td>
+                  <td>{{ user.emailAddress }}</td>
+                  <td>{{ user.university }}</td>
+                  <td>
+                    <button class="btn btn-danger btn-sm" (click)="deleteUser(user)">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#addUserModal">
+            Add User
+          </button>
+
+          <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="addUserModalLabel">Add New User</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form [formGroup]="registerForm" (ngSubmit)="registerUser()" autocomplete="off">
+                  <div class="modal-body">
+                    
+                    
+                    
+                    
+                    <div class="form-group">
+                      <input type="text" class="form-control" formControlName="firstName" placeholder="First Name">
+                      <small *ngIf="registerForm.controls.firstName.touched && registerForm.controls.firstName.errors" class="text-danger">
+                        <div *ngIf="registerForm.controls.firstName.errors.required">First name is required.</div>
+                        <div *ngIf="registerForm.controls.firstName.errors.minlength">First name must be at least 2 characters long.</div>
+                        <div *ngIf="registerForm.controls.firstName.errors.maxlength">First name cannot be more than 50 characters long.</div>
+                      </small>
+                    </div>
+        
+                    <div class="form-group">
+                      <input type="text" class="form-control" formControlName="secondName" placeholder="Last Name">
+                      <small *ngIf="registerForm.controls.secondName.touched && registerForm.controls.secondName.errors" class="text-danger">
+                        <div *ngIf="registerForm.controls.secondName.errors.required">Last name is required.</div>
+                        <div *ngIf="registerForm.controls.secondName.errors.minlength">Last name must be at least 2 characters long.</div>
+                        <div *ngIf="registerForm.controls.secondName.errors.maxlength">Last name cannot be more than 50 characters long.</div>
+                      </small>
+                    </div>
+                    
+                      <div class="form-group">
+                        <input type="email" class="form-control" formControlName="emailAddress" placeholder="Email Address">
+                        <small *ngIf="registerForm.controls.emailAddress.touched && registerForm.controls.emailAddress.errors" class="text-danger">
+                          <div *ngIf="registerForm.controls.emailAddress.errors.required">Email is required.</div>
+                          <div *ngIf="registerForm.controls.emailAddress.errors.email">Please enter a valid email address.</div>
+                        </small>
+                      </div>
+                    
+                      <div class="form-group">
+                        <input type="text" class="form-control" formControlName="university" placeholder="University">
+                        <small *ngIf="registerForm.controls.university.touched && registerForm.controls.university.errors" class="text-danger">
+                          <div *ngIf="registerForm.controls.university.errors.required">University is required.</div>
+                          <div *ngIf="registerForm.controls.university.errors.minlength">University must be at least 2 characters long.</div>
+                          <div *ngIf="registerForm.controls.university.errors.maxlength">University cannot be more than 50 characters long.</div>
+                        </small>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="presentationCheckbox" (change)="togglePresentationField()">
+                          <label class="form-check-label" for="presentationCheckbox">Presentation</label>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="text" class="form-control" formControlName="presentation" placeholder="Presentation Title">
+                        <small *ngIf="registerForm.controls.presentation.touched && registerForm.controls.presentation.errors" class="text-danger">
+                          <div *ngIf="registerForm.controls.presentation.errors.required">Presentation Title is required.</div>
+                          <div *ngIf="registerForm.controls.presentation.errors.minlength">Presentation Title must be at least 2 characters long.</div>
+                          <div *ngIf="registerForm.controls.presentation.errors.maxlength">Presentation Title cannot be more than 100 characters long.</div>
+                        </small>
+                      </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-success" type="submit" [disabled]="registerForm.invalid">Register</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 

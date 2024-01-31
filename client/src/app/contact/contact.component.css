@@ -1,0 +1,13 @@
+.contact-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between images as needed */
+    margin-top: 20px; /* Space above the images */
+  }
+  
+  .contact-image {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: for rounded corners */
+  }
+  
