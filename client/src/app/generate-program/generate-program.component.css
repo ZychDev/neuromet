@@ -1,0 +1,118 @@
+.container {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.record-form .form-group {
+  margin-bottom: 15px;
+}
+
+.record-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.record-form input, .record-form select {
+  border-radius: 5px;
+}
+
+
+.action-buttons .btn {
+  margin-right: 5px;
+}
+
+.action-buttons .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.action-buttons .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.action-buttons .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.action-buttons .btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.action-buttons .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.action-buttons .btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.scrollable-table {
+  max-height: 300px; 
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.table th, .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.scrollable-table .table {
+  border-collapse: collapse; 
+  border: 1px solid #dee2e6;
+}
+
+.container {
+  max-width: 800px; 
+  margin: 50px auto; 
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-registration {
+  height: 80vh; 
+  overflow-y: auto;
+}
+
+.record-form, .record-table {
+  max-width: 100%; 
+  padding: 20px;
+}
+
+.save-pdf-btn {
+  margin-top: 20px; 
+}
+
+.card-registration {
+  margin-bottom: 1rem;
+  padding: 20px; 
+  border-radius: 15px;
+}
+
+.table-responsive {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.custom-container {
+  max-width: 200%;
+  margin-left: auto;
+  margin-right: auto;
+}

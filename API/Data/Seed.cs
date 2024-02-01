@@ -11,23 +11,34 @@ namespace API.Data
 {
     public class Seed
     {
-        public static async Task SeedUsers(DataContext context)
+        public static async Task SeedUsersRoot(DataContext context)
         {
-            if (await context.Users.AnyAsync()) return;
+            if (await context.UsersRoot.AnyAsync()) return;
 
-            var userData = await File.ReadAllTextAsync("Data/UserSeedData.json");
-
-            var options = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
-
-            var users = JsonSerializer.Deserialize<List<LectureUser>>(userData);
-
-            foreach (var user in users)
-            {
-                context.Users.Add(user);
-            }
+                using var hmac = new HMACSHA512();
+                var userRootProfile = new AppUser
+                {
+                    UserName = "GAmqgZkgjhJn8xK1JRqz",
+                    PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes("HM5OFBGSh8659f0cRKMU")),
+                    PasswordSalt = hmac.Key
+                };
+                context.UsersRoot.Add(userRootProfile);
 
             await context.SaveChangesAsync();
 
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

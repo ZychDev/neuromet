@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { UsersComponent } from './users/users.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { GenerateProgramComponent } from './generate-program/generate-program.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
     ContactComponent,
     RootComponent,
     FooterComponent,
-    UsersComponent
+    UsersComponent,
+    GenerateProgramComponent
   ],
   imports: [
     BrowserModule,

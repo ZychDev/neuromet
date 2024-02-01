@@ -39,7 +39,7 @@ export class RegistrationComponent implements OnInit {
       secondName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
       emailAddress: ['', [Validators.required, Validators.email]],
       university: ['', [Validators.required]],
-      presentation: [{value: '', disabled: true}, [Validators.minLength(2), Validators.maxLength(100)]],
+      presentation: [{value: '', disabled: true}, [Validators.minLength(2), Validators.maxLength(200)]],
       recaptchaReactive: [null, Validators.required]  // Add this line
     });
   }

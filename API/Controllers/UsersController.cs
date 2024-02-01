@@ -56,9 +56,6 @@ namespace API.Controllers
             return BadRequest();
         }
 
-
-
-
         [HttpPost]
         public async Task<ActionResult<LectureUser>> AddUser(LectureUser user)
         {
