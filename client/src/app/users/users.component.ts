@@ -17,6 +17,8 @@ export class UsersComponent implements OnInit {
   registerForm: UntypedFormGroup;
   showPresentationField = false; 
   newUser: { firstName: string; secondName: string; emailAddress: string; university: string; };
+  emailForm: UntypedFormGroup;
+  selectedUser: any;
 
   constructor(
     private httpClient: HttpClient, 
@@ -26,6 +28,7 @@ export class UsersComponent implements OnInit {
   ) {}
   ngOnInit() {
     this.initForm();
+    this.initEmailForm();
     this.loadUsers();
     this.newUser = { firstName: '', secondName: '', emailAddress: '', university: '' };
   }
@@ -37,6 +40,13 @@ export class UsersComponent implements OnInit {
       emailAddress: ['', [Validators.required, Validators.email]],
       university: ['', [Validators.required]],
       presentation: [{value: '', disabled: true}, [Validators.minLength(2), Validators.maxLength(100)]] 
+    });
+  }
+
+  initEmailForm() {
+    this.emailForm = this.formBuilder.group({
+      subject: ['', [Validators.required]],
+      body: ['', [Validators.required]],
     });
   }
 
@@ -98,4 +108,31 @@ export class UsersComponent implements OnInit {
   sortUsers() {
     this.users.sort((a, b) => a.firstName.localeCompare(b.firstName)); 
   }
+
+  openEmailModal(user: any) {
+      this.selectedUser = user;
+      $('#emailModal').modal('show');
+    }
+
+  sendEmail() {
+    if (this.emailForm.valid) {
+      const emailData = {
+        emailAddress: this.selectedUser.emailAddress,
+        subject: this.emailForm.value.subject,
+        body: this.emailForm.value.body
+      };
+      this.accountService.sendEmail(emailData).subscribe(
+        () => {
+          this.toastr.success('Email sent successfully');
+          $('#emailModal').modal('hide');
+          this.emailForm.reset();
+        },
+        (error) => {
+          console.error('Error sending email:', error);
+          this.toastr.error('Failed to send email');
+        }
+      );
+    }
+  }
+
 }

@@ -39,6 +39,18 @@ namespace API.Data
                 .SingleOrDefaultAsync();
         }
 
+        public async Task<IEnumerable<SpamList>> GetSpamListMemberAsync()
+        {
+            var mails = await _context.SpamLists
+                .Select(mail => new SpamList
+                {
+                    Mail = mail.Mail,
+                })
+                .ToListAsync();
+
+            return mails;
+        }
+
         public async Task<IEnumerable<LectureUser>> GetMembersAsync()
         {
             var users = await _context.Users

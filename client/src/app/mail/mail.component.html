@@ -1,0 +1,120 @@
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center vh-100">
+      <div class="col-20 col-lg-20 col-xl-20">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+              <div class="card-body p-3 p-md-3 text-center">
+
+                  <!-- Tab Navigation -->
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item">
+                          <a class="nav-link active" id="users-tab" data-toggle="tab" href="#users" role="tab" aria-controls="users" aria-selected="true">Users</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" id="spam-tab" data-toggle="tab" href="#spam" role="tab" aria-controls="spam" aria-selected="false">Spam List</a>
+                      </li>
+                  </ul>
+
+                  <!-- Tab Content -->
+                  <div class="tab-content" id="myTabContent">
+                      <!-- Users Tab -->
+                      <div class="tab-pane fade show active" id="users" role="tabpanel" aria-labelledby="users-tab">
+                          <div class="users-container" style="max-height: 600px; max-width: 1000px; overflow-y: auto;">
+                              <table class="table table-striped">
+                                  <thead>
+                                      <tr>
+                                          <th>
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" id="selectAllCheckbox" (change)="selectAllUsers($event)">
+                                                  <label class="form-check-label" for="selectAllCheckbox">Select All</label>
+                                              </div>
+                                          </th>
+                                          <th>Name</th>
+                                          <th>Second Name</th>
+                                          <th>Email</th>
+                                          <th>University</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr *ngFor="let user of users; let i = index">
+                                          <td>
+                                              <div class="form-check">
+                                                  <input class="form-check-input user-checkbox" type="checkbox" [id]="'userCheckbox' + i" [value]="user.emailAddress" (change)="onUserCheckboxChange(user.emailAddress, $event.target.checked)">
+                                                  <label class="form-check-label" [for]="'userCheckbox' + i"></label>
+                                              </div>
+                                          </td>
+                                          <td>{{ user.firstName }}</td>
+                                          <td>{{ user.secondName }}</td>
+                                          <td>{{ user.emailAddress }}</td>
+                                          <td>{{ user.university }}</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+
+                      <!-- Spam List Tab -->
+                      <div class="tab-pane fade" id="spam" role="tabpanel" aria-labelledby="spam-tab">
+                          <div class="spam-list-container" style="max-height: 300px; overflow-y: auto;">
+                              <table class="table table-striped">
+                                  <thead>
+                                      <tr>
+                                          <th>
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" id="selectAllSpamCheckbox" (change)="selectAllSpam($event)">
+                                                  <label class="form-check-label" for="selectAllSpamCheckbox">Select All Spam</label>
+                                              </div>
+                                          </th>
+                                          <th>Email</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr *ngFor="let email of spamListEmails; let i = index">
+                                          <td>
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" [id]="'spamEmailCheckbox' + i" [value]="email.mail" (change)="onSpamCheckboxChange(email.mail, $event.target.checked)">
+                                                  <label class="form-check-label" [for]="'spamEmailCheckbox' + i"></label>
+                                              </div>
+                                          </td>
+                                          <td>{{ email.mail }}</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Send Email Button and Modal -->
+                  <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#bulkEmailModal">
+                      Send Email to Selected Users
+                  </button>
+                  <div class="modal fade" id="bulkEmailModal" tabindex="-1" role="dialog" aria-labelledby="bulkEmailModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="bulkEmailModalLabel">Compose Email</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <form [formGroup]="emailForm" (ngSubmit)="sendBulkEmail()" autocomplete="off">
+                                  <div class="modal-body">
+                                      <div class="form-group">
+                                          <input type="text" class="form-control" formControlName="subject" placeholder="Subject" required>
+                                      </div>
+                                      <div class="form-group">
+                                          <textarea class="form-control" formControlName="body" rows="5" placeholder="Message" required></textarea>
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button class="btn btn-primary" type="submit" [disabled]="emailForm.invalid || (!selectedUsers.length && !selectedSpamEmails.length)">Send Email</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

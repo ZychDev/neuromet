@@ -12,16 +12,20 @@ using System.Net;
 using System.Net.Mail;
 using System.Collections.Generic;
 using System.Linq;
+
 namespace API.Controllers
 {
     public class AccountController : BaseApiController
     {
         private readonly DataContext _context;
         private readonly ITokenService _tokenService;
-        public AccountController(DataContext context, ITokenService tokenService)
+        private readonly EmailService _emailService;
+
+        public AccountController(DataContext context, ITokenService tokenService, EmailService emailService)
         {
             _tokenService = tokenService;
             _context = context;
+            _emailService = emailService;
         }
 
         [HttpPost("register")]
@@ -38,6 +42,7 @@ namespace API.Controllers
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
+            await SendWelcomeEmail(user);
 
             return new UserDto
             {
@@ -85,6 +90,14 @@ namespace API.Controllers
                 .ToListAsync();
 
             return Ok(users);
+        }
+
+        private async Task SendWelcomeEmail(LectureUser user)
+        {
+
+            var subject = "Subject of the email";
+            var body = "Content of the email";
+            await _emailService.SendEmailAsync(user.EmailAddress, subject, body);
         }
     }
 }

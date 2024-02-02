@@ -11,6 +11,7 @@ import { RootComponent } from './root/root.component';
 import { UsersComponent } from './users/users.component';
 import { authGuard } from './_guards/auth.guard';
 import { GenerateProgramComponent } from './generate-program/generate-program.component';
+import { MailComponent } from './mail/mail.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
     children: [
       { path: 'users', component: UsersComponent, canActivate: [authGuard] },
       { path: 'generate-program', component: GenerateProgramComponent, canActivate: [authGuard] },
+      { path: 'mail', component: MailComponent, canActivate: [authGuard] },
 
     ]
   },

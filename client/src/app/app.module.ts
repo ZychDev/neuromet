@@ -22,6 +22,7 @@ import { UsersComponent } from './users/users.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { GenerateProgramComponent } from './generate-program/generate-program.component';
+import { MailComponent } from './mail/mail.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { GenerateProgramComponent } from './generate-program/generate-program.co
     RootComponent,
     FooterComponent,
     UsersComponent,
-    GenerateProgramComponent
+    GenerateProgramComponent,
+    MailComponent,
   ],
   imports: [
     BrowserModule,

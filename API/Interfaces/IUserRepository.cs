@@ -16,5 +16,6 @@ namespace API.Interfaces
         Task<IEnumerable<LectureUser>> GetMembersAsync();
         Task<LectureUser> GetMemberAsync(string username);
         Task<LectureUser> GetUserAsync(LectureUser userToDelete);
+        Task<IEnumerable<SpamList>> GetSpamListMemberAsync();
     }
 }

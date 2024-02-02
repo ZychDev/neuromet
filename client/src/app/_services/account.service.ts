@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { catchError, map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { User } from '../_models/user';
 import { LectureUser } from '../_models/lectureUser';
 import { ReplaySubject, Observable, of, throwError } from 'rxjs';
@@ -50,6 +50,54 @@ export class AccountService {
     this.currentUserSource.next(null);
   }
 
+  deleteUser(userToDelete: any): Observable<void> {
+    const currentUser = JSON.parse(localStorage.getItem('user'));
+
+    if (currentUser && currentUser.token) {
+      const headers = {
+        'Authorization': `Bearer ${currentUser.token}`
+      };
+
+      return this.http.post<void>(`${this.baseUrl}users/delete`, userToDelete, { headers: headers })
+    }
+  }
+  sendEmail(emailData: any): Observable<void> {
+    const currentUser = JSON.parse(localStorage.getItem('user'));
+    if (currentUser && currentUser.token) {
+      const headers = {
+        'Authorization': `Bearer ${currentUser.token}`,
+        'Content-Type': 'application/json'
+      };
+  
+      return this.http.post<void>(`${this.baseUrl}users/sendemail`, emailData, { headers: headers })
+    }
+  }
+
+  sendBulkEmail(emailData: any): Observable<void> {
+    const currentUser = JSON.parse(localStorage.getItem('user'));
+    if (currentUser && currentUser.token) {
+      const headers = {
+        'Authorization': `Bearer ${currentUser.token}`,
+        'Content-Type': 'application/json'
+      };
+  
+      return this.http.post<void>(`${this.baseUrl}users/sendbulkemail`, emailData, { headers: headers });
+    }
+  }
+
+  getSpamListEmails(): Observable<any[]> {
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user && user.token) {
+      const headers = {
+        'Authorization': `Bearer ${user.token}`
+      };
+
+      return this.http.get<any[]>(this.baseUrl + 'users/spam', { headers: headers });
+    } else {
+      return of([]);
+    }
+  }
+
   getUsers(): Observable<any[]> {
     const user = JSON.parse(localStorage.getItem('user'));
 
@@ -63,18 +111,6 @@ export class AccountService {
       return of([]);
     }
   }
-
-  deleteUser(userToDelete: any): Observable<void> {
-    const currentUser = JSON.parse(localStorage.getItem('user'));
-
-    if (currentUser && currentUser.token) {
-      const headers = {
-        'Authorization': `Bearer ${currentUser.token}`
-      };
-
-      return this.http.post<void>(`${this.baseUrl}users/delete`, userToDelete, { headers: headers })
-    }
-}
-
-
+  
+  
 }
