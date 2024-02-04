@@ -2,6 +2,7 @@
 FROM node:18 AS angular-build
 WORKDIR /app
 COPY client/ .  
+RUN npm cache clean --force
 RUN npm install
 RUN npm run build 
 
