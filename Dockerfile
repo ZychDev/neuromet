@@ -18,7 +18,8 @@ COPY API/ ./API/
 RUN dotnet publish API -c Release -o out  
 
 # Copy the Angular build artifacts to wwwroot
-COPY --from=angular-build /app/dist /app/API/wwwroot  
+# Adjusted path to match the outputPath in angular.json
+COPY --from=angular-build /app/dist/client /app/API/wwwroot  
 
 # Stage 3: Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
