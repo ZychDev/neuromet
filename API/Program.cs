@@ -28,7 +28,7 @@ builder.Services.AddSingleton<EmailService>();
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseCors("CorsPolicy");
