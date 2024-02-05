@@ -91,19 +91,20 @@ namespace API.Controllers
 
             return Ok(users);
         }
-    private async Task SendWelcomeEmail(LectureUser user)
-    {
-        try
+        private async Task SendWelcomeEmail(LectureUser user)
         {
-            var subject = "Subject of the email";
-            var body = "Content of the email";
-            await _emailService.SendEmailAsync(user.EmailAddress, subject, body);
-        }
-        catch (FormatException ex)
-        {
-            // Log the invalid email and the exception
-            _logger.LogError($"Invalid email format: {user.EmailAddress}. Exception: {ex.Message}");
-            throw;
+            try
+            {
+                var subject = "Subject of the email";
+                var body = "Content of the email";
+                await _emailService.SendEmailAsync(user.EmailAddress, subject, body);
+            }
+            catch (FormatException ex)
+            {
+                // Log the invalid email and the exception
+                _logger.LogError($"Invalid email format: {user.EmailAddress}. Exception: {ex.Message}");
+                throw;
+            }
         }
     }
 }
