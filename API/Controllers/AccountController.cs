@@ -42,7 +42,6 @@ namespace API.Controllers
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
-            await SendWelcomeEmail(user);
 
             return new UserDto
             {
@@ -90,14 +89,6 @@ namespace API.Controllers
                 .ToListAsync();
 
             return Ok(users);
-        }
-        private async Task SendWelcomeEmail(LectureUser user)
-        {
-
-            var subject = "Subject of the email";
-            var body = "Content of the email";
-            await _emailService.SendEmailAsync(user.EmailAddress, subject, body);
-    
         }
     }
 }
