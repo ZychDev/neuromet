@@ -25,7 +25,7 @@ public class EmailService
         }
 
         var smtpSettings = _configuration.GetSection("EmailSettings");
-        string fromMail = smtpSettings["FromMail"];
+        string fromMail = smtpSettings["SmtpUsername"];
         string fromPassword = smtpSettings["SmtpPassword"];
         MailMessage message = new MailMessage();
         message.From = new MailAddress(fromMail);
