@@ -1,8 +1,8 @@
-<div class="container-fluid">
-  <div class="row justify-content-center align-items-center vh-100">
-    <div class="col-12 col-lg-9 col-xl-7">
-      <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
-        <div class="card-body p-4 p-md-5 text-center">
+<div class="container-fluid" style="padding-top: 100px; padding-bottom: 60px;"> 
+  <div class="row justify-content-center align-items-center" style="min-height: calc(100vh - 160px);"> 
+    <div class="col">
+      <div class="card shadow-2-strong" style="border-radius: 15px;">
+        <div class="card-body p-4 p-md-5 text-center" style="overflow-y: auto;max-height: 600px;">
 
           <form *ngIf="!registrationCompleted" [formGroup]="registerForm" (ngSubmit)="register()" autocomplete="off">
             <h2 class="text-center">Sign up</h2>
@@ -75,9 +75,6 @@
               </div>
             </form>
             
-
-
-
             <div *ngIf="registrationCompleted" class="alert alert-success mt-3">
               Registration Completed!
             </div>

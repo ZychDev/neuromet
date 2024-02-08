@@ -1,0 +1,10 @@
+.btn-lg {
+    background-color: #249e90 !important; 
+    border-color: #249e90 !important; 
+    color: #ffffff !important;
+}
+
+.btn-lg:hover {
+    background-color: #1e897d !important; 
+    border-color: #25bead !important; 
+}

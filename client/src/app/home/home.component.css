@@ -1,0 +1,12 @@
+.contact-images {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.contact-image {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+}

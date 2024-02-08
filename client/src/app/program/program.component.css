@@ -2,3 +2,14 @@
     display: flex;
     justify-content: center;
   }
+
+.btn-primary {
+  background-color: #249e90 !important; 
+  border-color: #249e90 !important; 
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background-color: #1e897d !important; 
+  border-color: #1e897d !important; 
+}

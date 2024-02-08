@@ -131,9 +131,8 @@ namespace API.Controllers
 
         private async Task SendWelcomeEmail(LectureUser user)
         {
-
-            var subject = "Subject of the email";
-            var body = "Content of the email";
+            var subject = "Potwierdzenie rejestracji na wydarzenie Neuromet 2024";
+            var body = "Drogi uczestniku, \n Z przyjemnością informujemy, że Twoja rejestracja na wydarzenie Neuromet została pomyślnie przetworzona. Serdecznie dziękujemy za zainteresowanie i nie możemy się doczekać, aby się z Tobą spotkać! \nZ poważaniem, Zespół organizacyjny Neuromet";
             await _emailService.SendEmailAsync(user.EmailAddress, subject, body);
         }
 

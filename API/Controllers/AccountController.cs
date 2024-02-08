@@ -42,6 +42,7 @@ namespace API.Controllers
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
+            await SendWelcomeEmail(user);
 
             return new UserDto
             {
@@ -90,5 +91,16 @@ namespace API.Controllers
 
             return Ok(users);
         }
+
+        private async Task SendWelcomeEmail(LectureUser user)
+        {
+            var subject = "Potwierdzenie rejestracji na wydarzenie Neuromet 2024";
+            var body = $"Drogi uczestniku,\r\n\r\n" +
+                    "Z przyjemnością informujemy, że Twoja rejestracja na wydarzenie Neuromet 2024 została pomyślnie przetworzona. " +
+                    "Z poważaniem,\r\n" +
+                    "Zespół organizacyjny Neuromet";
+            await _emailService.SendEmailAsync(user.EmailAddress, subject, body);
+        }
+
     }
 }

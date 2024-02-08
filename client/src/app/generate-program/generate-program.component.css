@@ -116,3 +116,45 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.btn-primary {
+  background-color: #249e90 !important; 
+  border-color: #249e90 !important; 
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background-color: #1e897d !important; 
+  border-color: #25bead !important; 
+}
+
+.btn-info {
+  background-color: #249e90 !important; 
+  border-color: #249e90 !important; 
+  color: #ffffff !important;
+}
+
+.btn-info:hover {
+  background-color: #1e897d !important; 
+  border-color: #25bead !important; 
+}
+.btn-success {
+  background-color: #249e90 !important; 
+  border-color: #249e90 !important; 
+  color: #ffffff !important;
+}
+
+.btn-success:hover {
+  background-color: #1e897d !important; 
+  border-color: #25bead !important; 
+}
+.btn-secondary {
+  background-color: #249e90 !important; 
+  border-color: #249e90 !important; 
+  color: #ffffff !important;
+}
+
+.btn-secondary:hover {
+  background-color: #1e897d !important; 
+  border-color: #25bead !important; 
+}

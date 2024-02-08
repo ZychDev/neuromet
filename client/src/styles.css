@@ -1,0 +1,17 @@
+a {
+    color: #249e90;
+  }
+  
+  a:hover {
+    color: #27ac9c; 
+  }
+  
+  .button, button, input[type="submit"] {
+    background-color: #249e90; 
+    color: #ffffff;
+  }
+  
+  .button:hover, button:hover, input[type="submit"]:hover {
+    background-color: #27ac9c; 
+  }
+  

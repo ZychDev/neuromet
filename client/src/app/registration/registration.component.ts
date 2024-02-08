@@ -16,6 +16,7 @@ export class RegistrationComponent implements OnInit {
   registerForm: UntypedFormGroup; 
   presentationCheckboxChecked = false;
   siteKey: string;
+  isLoading = false;
 
   constructor(
     private accountService: AccountService, 
@@ -46,21 +47,25 @@ export class RegistrationComponent implements OnInit {
 
   register() {
     if (this.registerForm.valid) {
-      this.accountService.register(this.registerForm.value).subscribe(response => {
-        console.log(response);
-        this.cancel();
-      }, error => {
-        console.log(error);
-        this.toastr.error(error.error);
-      });
+      this.isLoading = true; 
+      this.accountService.register(this.registerForm.value).subscribe(
+        response => {
+          console.log(response);
+          this.registrationCompleted = true; 
+          this.isLoading = false; 
+        }, 
+        error => {
+          console.log(error);
+          this.toastr.error(error.error);
+          this.isLoading = false; 
+        }
+      );
     } else {
       this.toastr.error('Form is not valid!');
     }
   }
 
-  cancel() {
-    this.cancelRegister.emit(false);
-  }
+
 
   togglePresentationField() {
     this.presentationCheckboxChecked = !this.presentationCheckboxChecked;
