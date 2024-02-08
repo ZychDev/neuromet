@@ -3,7 +3,10 @@ WORKDIR /app/client
 COPY /client/package.json /client/package-lock.json ./
 RUN npm install
 COPY /client .
+ARG API_URL
+RUN echo "export const environment = { production: true, apiURL: '$API_URL' };" > ./src/environments/environment.prod.ts
 RUN npm run build --configuration=production
+
 
 # Use the official Microsoft .NET Core runtime as a parent image
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base

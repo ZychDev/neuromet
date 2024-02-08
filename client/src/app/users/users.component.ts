@@ -12,7 +12,6 @@ declare var $: any;
 })
 export class UsersComponent implements OnInit {
   users: any[] = [];
-  baseUrl = 'http://localhost:80/api/';
   confirmDeleteUser: any = null; 
   registerForm: UntypedFormGroup;
   showPresentationField = false; 
