@@ -10,6 +10,7 @@ using System.Net;
 using System.Net.Mail;
 using Microsoft.Extensions.Configuration;
 using API.DTOs;
+using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
 {
@@ -20,13 +21,16 @@ namespace API.Controllers
         private readonly IMapper _mapper;
         private readonly EmailService _emailService;
         private readonly IConfiguration _configuration;
+        private readonly ILogger<UsersController> _logger;
 
-        public UsersController(IUserRepository userRepository, IMapper mapper, EmailService emailService, IConfiguration configuration)
+
+        public UsersController(IUserRepository userRepository, IMapper mapper, EmailService emailService, IConfiguration configuration, ILogger<UsersController> logger)
         {
             _mapper = mapper;
             _userRepository = userRepository;
             _emailService = emailService;
             _configuration = configuration;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -90,8 +94,13 @@ namespace API.Controllers
                 await _emailService.SendEmailAsync(request.EmailAddress, request.Subject, request.Body);
                 return Ok();
             }
+            catch (ArgumentException ex)
+            {
+                return BadRequest($"Invalid request: {ex.Message}");
+            }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Failed to send email.");
                 return BadRequest($"Failed to send email: {ex.Message}");
             }
         }
@@ -101,14 +110,20 @@ namespace API.Controllers
         {
             try
             {
-                foreach(var emailAddress in request.EmailAddresses)
+                foreach (var emailAddress in request.EmailAddresses)
                 {
+                    if (!EmailService.IsValidEmail(emailAddress))
+                    {
+                        _logger.LogError($"Invalid email address format: {emailAddress}");
+                        continue;
+                    }
                     await _emailService.SendEmailAsync(emailAddress, request.Subject, request.Body);
                 }
                 return Ok();
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Failed to send bulk emails.");
                 return BadRequest($"Failed to send emails: {ex.Message}");
             }
         }

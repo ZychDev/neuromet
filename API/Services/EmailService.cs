@@ -3,23 +3,30 @@ using System.Net.Mail;
 using System.Net.Mime;
 using System.Threading.Tasks; 
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 public class EmailService
 {
     private readonly IConfiguration _configuration;
+    private readonly ILogger<EmailService> _logger;
 
-    public EmailService(IConfiguration configuration)
+    public EmailService(IConfiguration configuration, ILogger<EmailService> logger)
     {
         _configuration = configuration;
+        _logger = logger;
     }
 
     public async Task SendEmailAsync(string to, string subject, string body)
     {
-        var smtpSettings = _configuration.GetSection("EmailSettings");
+        if (!IsValidEmail(to))
+        {
+            _logger.LogError($"Invalid email address format: {to}");
+            throw new ArgumentException($"Invalid email address format: {to}", nameof(to));
+        }
 
+        var smtpSettings = _configuration.GetSection("EmailSettings");
         string fromMail = smtpSettings["SmtpUsername"];
         string fromPassword = smtpSettings["SmtpPassword"];
-
         MailMessage message = new MailMessage();
         message.From = new MailAddress(fromMail);
         message.Subject = subject;
@@ -52,22 +59,43 @@ public class EmailService
         message.AlternateViews.Add(alternateView);
         message.IsBodyHtml = true;
 
-        var smtpClient = new SmtpClient(smtpSettings["SmtpServer"])
+        try
         {
-            Port = int.Parse(smtpSettings["SmtpPort"]),
-            Credentials = new NetworkCredential(fromMail, fromPassword),
-            EnableSsl = true,
-        };
+            var smtpClient = new SmtpClient(smtpSettings["SmtpServer"])
+            {
+                Port = int.Parse(smtpSettings["SmtpPort"]),
+                Credentials = new NetworkCredential(fromMail, fromPassword),
+                EnableSsl = true,
+            };
 
-        await smtpClient.SendMailAsync(message);
+            await smtpClient.SendMailAsync(message);
+            _logger.LogInformation($"Email sent successfully to {to}");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, $"Failed to send email to {to}");
+            throw;
+        }
     }
 
     public string ImageToBase64(string imagePath)
     {
         byte[] imageArray = System.IO.File.ReadAllBytes(imagePath);
         string base64String = Convert.ToBase64String(imageArray);
-        return base64String.Replace("\r\n", "").Replace("\n", "").Replace("\r", ""); // Remove any line breaks
+        return base64String.Replace("\r\n", "").Replace("\n", "").Replace("\r", "");
     }
 
+    public static bool IsValidEmail(string email)
+    {
+        try
+        {
+            var addr = new System.Net.Mail.MailAddress(email);
+            return addr.Address == email;
+        }
+        catch
+        {
+            return false;
+        }
+    }
 
 }
