@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddControllers();
 
-var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
+var allowedOriginsEnv = builder.Configuration["CORS_ALLOWED_ORIGINS"]?.Split(',') ?? 
+                        builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
 
 builder.Services.AddCors(options =>
 {
@@ -16,7 +17,7 @@ builder.Services.AddCors(options =>
     {
         policyBuilder.AllowAnyHeader()
                      .AllowAnyMethod()
-                     .WithOrigins(allowedOrigins)
+                     .WithOrigins(allowedOriginsEnv)
                      .AllowCredentials();
     });
 });
