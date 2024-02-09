@@ -30,3 +30,9 @@
     background-color: #1e897d !important; 
     border-color: #25bead !important; 
 }
+.wrap-text {
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    max-width: 200px; 
+  }
+  

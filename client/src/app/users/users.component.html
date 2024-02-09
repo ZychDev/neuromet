@@ -21,7 +21,9 @@
                   <td>{{ user.secondName }}</td>
                   <td>{{ user.emailAddress }}</td>
                   <td>{{ user.university }}</td>
-                  <td>{{ user.presentation || '' }}</td> 
+                  <td style="white-space: pre-wrap; word-wrap: break-word; max-width: 300px;">
+                    {{ user.presentation || 'N/A' }}
+                  </td>
                   <td>
                     <button class="btn btn-danger btn-sm" (click)="deleteUser(user)">Delete</button>
                     <button class="btn btn-primary btn-sm" (click)="openEmailModal(user)">Send Email</button>
