@@ -11,6 +11,7 @@
                   <th>Second Name</th>
                   <th>Email</th>
                   <th>University</th>
+                  <th>Presentation</th>
                   <th>Actions</th>
                 </tr>
               </thead>
@@ -20,6 +21,7 @@
                   <td>{{ user.secondName }}</td>
                   <td>{{ user.emailAddress }}</td>
                   <td>{{ user.university }}</td>
+                  <td>{{ user.presentation || '' }}</td> 
                   <td>
                     <button class="btn btn-danger btn-sm" (click)="deleteUser(user)">Delete</button>
                     <button class="btn btn-primary btn-sm" (click)="openEmailModal(user)">Send Email</button>

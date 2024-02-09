@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { AccountService } from '../_services/account.service';
 import { ToastrService } from 'ngx-toastr';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 declare var $: any;
 
 @Component({
@@ -38,7 +39,7 @@ export class UsersComponent implements OnInit {
       secondName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(50)]],
       emailAddress: ['', [Validators.required, Validators.email]],
       university: ['', [Validators.required]],
-      presentation: [{value: '', disabled: true}, [Validators.minLength(2), Validators.maxLength(100)]] 
+      presentation: [{value: '', disabled: true}, [Validators.minLength(2), Validators.maxLength(200)]] 
     });
   }
 
