@@ -41,7 +41,7 @@
                       <input [(ngModel)]="tempName" type="text" class="form-control">
                     </div>
                     <ng-template #viewModeName>{{record.name}}</ng-template>
-                  </td>
+                  </td>                  
                   <td>
                     <div *ngIf="editingIndex === i; else viewModeSubject">
                       <input [(ngModel)]="tempSubject" type="text" class="form-control">
@@ -49,12 +49,12 @@
                     <ng-template #viewModeSubject>{{record.subject}}</ng-template>
                   </td>
                   <td>
-                    <div *ngIf="editingIndex === i; else editButton">
+                    <div *ngIf="editingIndex === i; else editAndDeleteButtons">
                       <button class="btn btn-success" (click)="saveChanges(i)">Save</button>
                       <button class="btn btn-secondary" (click)="cancelEdit()">Cancel</button>
                     </div>
-                    <ng-template #editButton>
-                      <button class="btn btn-primary" (click)="editRecord(i)">Edit</button>
+                    <ng-template #editAndDeleteButtons>
+                      <button class="btn btn-danger" (click)="deleteRecord(i)">Delete</button>
                     </ng-template>
                   </td>
                 </tr>

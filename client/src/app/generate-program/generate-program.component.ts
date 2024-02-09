@@ -22,6 +22,8 @@ export class GenerateProgramComponent implements OnInit {
   editingIndex: number | null = null; 
   tempName: string = ''; 
   tempSubject: string = ''; 
+  tempTime: string = '';
+
   constructor(
     private formBuilder: UntypedFormBuilder,
     public accountService: AccountService,
@@ -41,20 +43,30 @@ export class GenerateProgramComponent implements OnInit {
       subject: [{value: '', disabled: true}, Validators.required] 
     });
   }
-  
-  editRecord(index: number) {
-    this.editingIndex = index;
-    this.tempName = this.records[index].name; 
-    this.tempSubject = this.records[index].subject; 
+
+  deleteRecord(index: number) {
+    this.records.splice(index, 1);
   }
 
   saveChanges(index: number) {
     if (this.editingIndex !== null) {
-      this.records[index].name = this.tempName;
-      this.records[index].subject = this.tempSubject; 
+      const record = this.records[index];
+      record.name = this.tempName; 
+      record.subject = this.tempSubject;
+      record.time = this.tempTime; 
       this.editingIndex = null; 
     }
   }
+  
+
+  editRecord(index: number) {
+    this.editingIndex = index;
+    const record = this.records[index];
+    this.tempName = `${record.firstName} ${record.secondName}`;
+    this.tempSubject = record.subject;
+    this.tempTime = record.time; 
+  }
+  
 
   cancelEdit() {
     this.editingIndex = null; 
