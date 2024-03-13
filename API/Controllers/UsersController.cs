@@ -73,6 +73,27 @@ namespace API.Controllers
             return BadRequest();
         }
 
+        [HttpPost("deleteSpamUser")]
+        public async Task<IActionResult> DeleteSpamUser(SpamList userToDelete)
+        {
+            var spamUser = await _userRepository.GetSpamMailAsync(userToDelete.Mail);
+            _logger.LogInformation("Spam user found: {@SpamUser}", spamUser);
+
+            if (spamUser == null)
+            {
+                return NotFound();
+            }
+
+            _userRepository.DeleteSpamAccount(spamUser);
+
+            if (await _userRepository.SaveAllAsync())
+            {
+                return Ok();
+            }
+
+            return BadRequest();
+        }
+
         [HttpPost]
         public async Task<ActionResult<LectureUser>> AddUser(LectureUser user)
         {

@@ -133,6 +133,36 @@ export class MailComponent implements OnInit {
     }
   }
 
+  deleteUser(user: any) {
+    if (confirm('Are you sure you want to delete this user?')) {
+      this.accountService.deleteUser(user).subscribe(
+        () => {
+          this.users = this.users.filter(u => u !== user);
+          this.toastr.success('User deleted successfully');
+        },
+        (error) => {
+          console.error('Error deleting user:', error);
+          this.toastr.error('Failed to delete user');
+        }
+      );
+    }
+  }
+
+  deleteSpamUser(spamUser: any) {
+    if (confirm('Are you sure you want to delete this user?')) {
+      this.accountService.deleteSpamUser(spamUser).subscribe(
+        () => {
+          this.spamListEmails = this.spamListEmails.filter(u => u !== spamUser);
+          this.toastr.success('User deleted successfully');
+        },
+        (error) => {
+          console.error('Error deleting user:', error);
+          this.toastr.error('Failed to delete user');
+        }
+      );
+    }
+  }
+
 
 
 }

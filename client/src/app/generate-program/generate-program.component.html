@@ -31,11 +31,17 @@
                   <th>Time</th>
                   <th>Name</th>
                   <th>Subject</th>
+                  <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
                 <tr *ngFor="let record of records; let i = index">
-                  <td>{{record.time}}</td>
+                  <td>
+                    <div *ngIf="editingIndex === i; else viewModeTime">
+                      <input [(ngModel)]="tempTime" type="text" class="form-control">
+                    </div>
+                    <ng-template #viewModeTime>{{record.time}}</ng-template>
+                  </td>
                   <td>
                     <div *ngIf="editingIndex === i; else viewModeName">
                       <input [(ngModel)]="tempName" type="text" class="form-control">
@@ -54,6 +60,7 @@
                       <button class="btn btn-secondary" (click)="cancelEdit()">Cancel</button>
                     </div>
                     <ng-template #editAndDeleteButtons>
+                      <button class="btn btn-info" (click)="editRecord(i)">Edit</button>
                       <button class="btn btn-danger" (click)="deleteRecord(i)">Delete</button>
                     </ng-template>
                   </td>

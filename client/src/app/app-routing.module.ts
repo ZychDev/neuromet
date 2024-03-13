@@ -12,6 +12,7 @@ import { UsersComponent } from './users/users.component';
 import { authGuard } from './_guards/auth.guard';
 import { GenerateProgramComponent } from './generate-program/generate-program.component';
 import { MailComponent } from './mail/mail.component';
+import { SeminarComponent } from './seminar-archive/seminar.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'program', component: ProgramComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'root', component: RootComponent },
+  { path: 'seminar', component: SeminarComponent },
   {
     path: '',
     runGuardsAndResolvers: 'always',

@@ -46,6 +46,9 @@
                                           <td>{{ user.secondName }}</td>
                                           <td>{{ user.emailAddress }}</td>
                                           <td>{{ user.university }}</td>
+                                          <td>
+                                            <button class="btn btn-danger btn-sm" (click)="deleteUser(user)">Delete</button>
+                                          </td>
                                       </tr>
                                   </tbody>
                               </table>
@@ -76,6 +79,9 @@
                                               </div>
                                           </td>
                                           <td>{{ email.mail }}</td>
+                                          <td>
+                                            <button class="btn btn-danger btn-sm" (click)="deleteSpamUser(email)">Delete</button>
+                                          </td>
                                       </tr>
                                   </tbody>
                               </table>

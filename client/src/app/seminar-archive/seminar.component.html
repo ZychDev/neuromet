@@ -1,0 +1,20 @@
+<div class="archive-container">
+    <h1>Archiwum</h1>
+    <h2>Program seminarium w roku:</h2>
+    <ul>
+      <li *ngFor="let archive of seminarArchives" (click)="selectArchive(archive)">{{archive.year}}</li>
+    </ul>
+  
+    <div *ngIf="selectedArchive">
+      <h3>{{ selectedArchive.title }}</h3>
+      <p>{{ selectedArchive.date | date }} - {{ selectedArchive.location }}</p>
+      <ul>
+        <li *ngFor="let presentation of selectedArchive.presentations">
+          <strong>{{ presentation.title }}</strong><br>
+          {{ presentation.authors }}<br>
+          {{ presentation.affiliation }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  

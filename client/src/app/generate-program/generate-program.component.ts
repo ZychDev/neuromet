@@ -62,7 +62,7 @@ export class GenerateProgramComponent implements OnInit {
   editRecord(index: number) {
     this.editingIndex = index;
     const record = this.records[index];
-    this.tempName = `${record.firstName} ${record.secondName}`;
+    this.tempName = record.name;
     this.tempSubject = record.subject;
     this.tempTime = record.time; 
   }
@@ -158,7 +158,7 @@ export class GenerateProgramComponent implements OnInit {
           table: {
             widths: ['10%', '75%'],
             body: [
-              [{ text: 'Time', style: 'tableHeader' }, { text: 'Description', style: 'tableHeader' }],
+              [{ text: 'Godzina', style: 'tableHeader' }, { text: 'Opis', style: 'tableHeader' }],
               ...tableBody
             ]
           },

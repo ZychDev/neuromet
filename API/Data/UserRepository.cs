@@ -31,12 +31,22 @@ namespace API.Data
             _context.Users.Remove(user);
         }
 
+        public void DeleteSpamAccount(SpamList user)
+        {
+            _context.SpamLists.Remove(user);
+        }
+
         public async Task<LectureUser> GetMemberAsync(string firstname)
         {
             return await _context.Users
                 .Where(x => x.FirstName == firstname)
                 .ProjectTo<LectureUser>(_mapper.ConfigurationProvider)
                 .SingleOrDefaultAsync();
+        }
+
+        public async Task<SpamList> GetSpamMailAsync(string email)
+        {
+            return await _context.SpamLists.FirstOrDefaultAsync(s => s.Mail == email);
         }
 
         public async Task<IEnumerable<SpamList>> GetSpamListMemberAsync()

@@ -12,6 +12,7 @@ namespace API.Data
         public DbSet<LectureUser> Users { get; set; }
         public DbSet<AppUser> UsersRoot { get; set; }
         public DbSet<SpamList> SpamLists { get; set; }
+        public DbSet<SeminarArchive> SeminarArchives { get; set; }
 
     }
 }

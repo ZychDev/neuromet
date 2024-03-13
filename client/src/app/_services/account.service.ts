@@ -5,6 +5,7 @@ import { User } from '../_models/user';
 import { LectureUser } from '../_models/lectureUser';
 import { ReplaySubject, Observable, of, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
+import { SeminarArchive } from '../_models/seminar';
 
 @Injectable({
   providedIn: 'root'
@@ -62,6 +63,19 @@ export class AccountService {
       return this.http.post<void>(`${this.baseUrl}users/delete`, userToDelete, { headers: headers })
     }
   }
+
+  deleteSpamUser(userToDelete: any): Observable<void> {
+    const currentUser = JSON.parse(localStorage.getItem('user'));
+
+    if (currentUser && currentUser.token) {
+      const headers = {
+        'Authorization': `Bearer ${currentUser.token}`
+      };
+      
+      return this.http.post<void>(`${this.baseUrl}users/deleteSpamUser`, userToDelete, { headers: headers })
+    }
+  }
+
   sendEmail(emailData: any): Observable<void> {
     const currentUser = JSON.parse(localStorage.getItem('user'));
     if (currentUser && currentUser.token) {
@@ -111,6 +125,20 @@ export class AccountService {
     } else {
       return of([]);
     }
+  }
+
+  getSeminarArchives(): Observable<SeminarArchive[]> {
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (user && user.token) {
+      const headers = {
+        'Authorization': `Bearer ${user.token}`
+      };
+
+      return this.http.get<any[]>(this.baseUrl + 'SeminarArchives', { headers: headers });
+    } else {
+      return of([]);
+    }  
   }
   
   
