@@ -3,7 +3,6 @@ export interface SeminarArchive {
     year: number;
     title: string;
     location: string;
-    date: Date;
     presentations: Presentation[];
 }
   

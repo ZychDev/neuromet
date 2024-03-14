@@ -11,7 +11,6 @@ namespace API.Entities
         public int Year { get; set; }
         public string Title { get; set; }
         public string Location { get; set; }
-        public DateTime Date { get; set; }
         public List<Presentation> Presentations { get; set; }
     }
 }

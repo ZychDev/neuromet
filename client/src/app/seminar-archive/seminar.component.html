@@ -1,20 +1,26 @@
-<div class="archive-container">
-    <h1>Archiwum</h1>
-    <h2>Program seminarium w roku:</h2>
-    <ul>
-      <li *ngFor="let archive of seminarArchives" (click)="selectArchive(archive)">{{archive.year}}</li>
-    </ul>
-  
-    <div *ngIf="selectedArchive">
-      <h3>{{ selectedArchive.title }}</h3>
-      <p>{{ selectedArchive.date | date }} - {{ selectedArchive.location }}</p>
-      <ul>
-        <li *ngFor="let presentation of selectedArchive.presentations">
-          <strong>{{ presentation.title }}</strong><br>
-          {{ presentation.authors }}<br>
-          {{ presentation.affiliation }}
-        </li>
-      </ul>
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center vh-100">
+    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+      <div class="card-body p-4 p-md-5">
+        <div class="button-container">
+          <h5 class="mb-4">Seminar Archives</h5>
+          <ul class="list-group list-group-flush">
+            <li *ngFor="let archive of seminarArchives" class="list-group-item" (click)="selectArchive(archive)">
+              <h6>{{ archive.year }}: {{ archive.title }}</h6>
+              <p>Location: {{ archive.location }}</p>
+              <p>Date: {{ archive.date | date: 'mediumDate' }}</p>
+              <div *ngIf="selectedArchive === archive">
+                <h6>Presentations:</h6>
+                <ul>
+                  <li *ngFor="let presentation of archive.presentations">
+                    {{ presentation.title }} by {{ presentation.authors }} ({{ presentation.affiliation }})
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-  
+</div>

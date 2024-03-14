@@ -23,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { GenerateProgramComponent } from './generate-program/generate-program.component';
 import { MailComponent } from './mail/mail.component';
+import { SeminarComponent } from './seminar-archive/seminar.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MailComponent } from './mail/mail.component';
     UsersComponent,
     GenerateProgramComponent,
     MailComponent,
+    SeminarComponent
   ],
   imports: [
     BrowserModule,

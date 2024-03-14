@@ -77,6 +77,25 @@ namespace API.Data
             return users;
         }
 
+        public async Task<IEnumerable<SeminarArchive>> GetSeminarAsync()
+        {
+            // var seminar = await _context.SeminarArchives
+            //     .Select(seminar => new SeminarArchive
+            //     {
+            //         Year = seminar.Year,
+            //         Title = seminar.Title,
+            //         Location = seminar.Location,
+            //     })
+            //     .ToListAsync();
+             var seminar = await _context.SeminarArchives
+                .Include(sa => sa.Presentations)
+                .ToListAsync();
+
+            return seminar;
+        }
+
+
+
 
         public async Task<LectureUser> GetUserByIdAsync(int id)
         {

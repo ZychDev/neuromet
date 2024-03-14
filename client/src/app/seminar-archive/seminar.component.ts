@@ -16,6 +16,7 @@ export class SeminarComponent implements OnInit {
   constructor(private seminarService: AccountService) { }
 
   ngOnInit(): void {
+    debugger;
     this.seminarService.getSeminarArchives().subscribe(
       (data) => this.seminarArchives = data,
       (error) => console.error(error)
@@ -23,6 +24,7 @@ export class SeminarComponent implements OnInit {
   }
 
   selectArchive(archive: SeminarArchive): void {
-    this.selectedArchive = archive;
+    this.selectedArchive = this.selectedArchive === archive ? null : archive;
   }
+  
 }

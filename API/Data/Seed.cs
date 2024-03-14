@@ -59,5 +59,24 @@ namespace API.Data
 
             await context.SaveChangesAsync();
         }
+
+        public static async Task SeedSeminarArchives(DataContext context)
+        {
+            if (await context.SeminarArchives.AnyAsync()) return;
+
+            var seminarData = await File.ReadAllTextAsync("Data/archive.json");
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var seminars = JsonSerializer.Deserialize<List<SeminarArchive>>(seminarData, options);
+
+            if (seminars != null)
+            {
+                foreach (var seminar in seminars)
+                {
+                    context.SeminarArchives.Add(seminar);
+                }
+
+                await context.SaveChangesAsync();
+            }
+        }
     }
 }

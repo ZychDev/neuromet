@@ -43,12 +43,14 @@ app.MapFallbackToController("Index", "Fallback");
 
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
+
 try
 {
     var context = services.GetRequiredService<DataContext>();
     var config = services.GetRequiredService<IConfiguration>();
     context.Database.Migrate();
     await Seed.SeedUsersRoot(context, config);
+    await Seed.SeedSeminarArchives(context);
 }
 catch (Exception ex)
 {

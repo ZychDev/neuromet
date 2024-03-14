@@ -19,5 +19,7 @@ namespace API.Interfaces
         Task<LectureUser> GetUserAsync(LectureUser userToDelete);
         Task<IEnumerable<SpamList>> GetSpamListMemberAsync();
         Task<SpamList> GetSpamMailAsync(string email);
+        Task<IEnumerable<SeminarArchive>> GetSeminarAsync();
+
     }
 }
