@@ -31,6 +31,10 @@ namespace API.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
+            if (await UserExists(registerDto.EmailAddress))
+            {
+                return BadRequest("Email address is already registered.");
+            }
             var user = new LectureUser
             {
                 FirstName = registerDto.FirstName,
@@ -100,6 +104,11 @@ namespace API.Controllers
                     "Z poważaniem,\r\n" +
                     "Zespół organizacyjny Neuromet";
             await _emailService.SendEmailAsync(user.EmailAddress, subject, body);
+        }
+
+        private async Task<bool> UserExists(string email)
+        {
+            return await _context.Users.AnyAsync(x => x.EmailAddress == email);
         }
 
     }
