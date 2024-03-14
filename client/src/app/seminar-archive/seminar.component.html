@@ -1,16 +1,22 @@
-<div class="container-fluid">
-  <div class="row justify-content-center align-items-center vh-100">
-    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
-      <div class="card-body p-4 p-md-5">
-        <div class="button-container">
-          <h5 class="mb-4">Seminar Archives</h5>
-          <ul class="list-group list-group-flush">
-            <li *ngFor="let archive of seminarArchives" class="list-group-item" (click)="selectArchive(archive)">
+<div class="container-fluid" style="padding-top: 100px; padding-bottom: 60px;"> 
+  <div class="row justify-content-center align-items-center" style="min-height: calc(100vh - 160px);"> 
+    <div class="col">
+      <div class="card shadow-2-strong" style="border-radius: 15px;">
+        <div class="card-body p-4 p-md-5 text-center" style="overflow-y: auto; max-height: 600px;">
+          <h5 class="mb-4">Seminarium Archiwum</h5>
+          <div class="mb-3 text-start">
+            <select class="form-select" [(ngModel)]="selectedYear" (ngModelChange)="filterArchivesByYear()">
+              <option value="">Wybierz Rok</option>
+              <option *ngFor="let year of getUniqueYears()" [value]="year">{{ year }}</option>
+            </select>
+          </div>
+          <ul class="list-group list-group-flush text-start">
+            <li *ngFor="let archive of filteredSeminarArchives" class="list-group-item" (click)="selectArchive(archive)">
               <h6>{{ archive.year }}: {{ archive.title }}</h6>
-              <p>Location: {{ archive.location }}</p>
-              <p>Date: {{ archive.date | date: 'mediumDate' }}</p>
+              <p>Lokalizacja: {{ archive.location }}</p>
+              <p>Data: {{ archive.date' }}</p>
               <div *ngIf="selectedArchive === archive">
-                <h6>Presentations:</h6>
+                <h6>Prezentacje:</h6>
                 <ul>
                   <li *ngFor="let presentation of archive.presentations">
                     {{ presentation.title }} by {{ presentation.authors }} ({{ presentation.affiliation }})
@@ -18,7 +24,7 @@
                 </ul>
               </div>
             </li>
-          </ul>
+          </ul>          
         </div>
       </div>
     </div>

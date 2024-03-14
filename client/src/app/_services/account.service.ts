@@ -128,17 +128,8 @@ export class AccountService {
   }
 
   getSeminarArchives(): Observable<SeminarArchive[]> {
-    const user = JSON.parse(localStorage.getItem('user'));
-    debugger;
-    if (user && user.token) {
-      const headers = {
-        'Authorization': `Bearer ${user.token}`
-      };
-
-      return this.http.get<any[]>(this.baseUrl + 'seminar/list', { headers: headers });
-    } else {
-      return of([]);
-    }  
+    return this.http.get<SeminarArchive[]>(this.baseUrl + 'seminar');
+ 
   }
   
   

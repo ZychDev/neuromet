@@ -1,28 +1,46 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using API.Data;
+using API.DTOs;
 using API.Entities;
 using API.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Net;
+using System.Net.Mail;
+using System.Collections.Generic;
+using System.Linq;
+using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
-[ApiController]
-public class SeminarController : ControllerBase
+namespace API.Controllers
 {
-    private readonly DataContext _context;
-    private readonly IUserRepository _userRepository;
-
-    public SeminarController(DataContext context, IUserRepository userRepository)
+    public class SeminarController : BaseApiController
     {
-        _context = context;
-        _userRepository = userRepository;
-    }
+        private readonly DataContext _context;
+        private readonly ITokenService _tokenService;
+        private readonly EmailService _emailService;
+        private readonly IUserRepository _userRepository;
 
-    [HttpGet("list")]
-    public async Task<ActionResult<IEnumerable<SeminarArchive>>> GetSeminarArchives()
-    {
+        public SeminarController(IUserRepository userRepository, DataContext context, ITokenService tokenService, EmailService emailService)
+        {
+            _tokenService = tokenService;
+            _context = context;
+            _emailService = emailService;
+            _userRepository = userRepository;
+        }
+
+        [HttpGet]      
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetSeminarArchives()
+        {
             var seminarArchives = await _userRepository.GetSeminarAsync();
             return Ok(seminarArchives);
-    }
+        }
 
+
+    }
 }

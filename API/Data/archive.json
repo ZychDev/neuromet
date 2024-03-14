@@ -1,0 +1,1243 @@
+[
+    {
+        "Year": 2023,
+        "Title": "25. Seminarium NeuroMet2023",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122",
+        "Date": "18 kwietnia 2023 ",
+        "Presentations": [
+            {
+                "Title": "Zastosowanie sztucznej inteligencji i uczenia maszynowego w pomiarach powierzchni",
+                "Authors": "Dawid Kucharski, Adam Gąska, Tomasz Kowaluk, Krzysztof Stępień, Bartosz Gapiński, Piotr Książek, Małgorzata Kujawińska, Włodzimierz Makieła, Michał Nawotka, Jerzy Sładek, Łukasz Ślusarski, Michał Wieczorowski",
+                "Affiliation": "Politechnika Poznańska"
+            },
+            {
+                "Title": "Właściwości pomiarów odkształcenia metodą DIC oraz ekstensometrem LVDT i ekstensometrem tensometrycznym na przykładzie wyznaczonych modułów sprężystości stali S355J2",
+                "Authors": "Marcin Kempny",
+                "Affiliation": "Sieć Badawcza Łukasiewicza – Górnośląski Instytut Technologiczny"
+            },
+            {
+                "Title": "Czy wrony pomogą uczyć sieci neuronowe?",
+                "Authors": "Marcin Perzyk",
+                "Affiliation": "Politechnika Warszawska"
+            },
+            {
+                "Title": "Rola wirtualnych ekspertów w procesach wyciskania aluminium",
+                "Authors": "Jacek Kozłowski",
+                "Affiliation": "Politechnika Warszawska"
+            },
+            {
+                "Title": "Wykorzystanie sztucznych sieci neuronowych do projektowania procesu RTH",
+                "Authors": "Hanna Sadłowska, Andrzej Kochański, Barbara Mrzygłód, Izabela Olejarczyk-Wożeńska, Dorota Byrska-Wójcik",
+                "Affiliation": "Politechnika Warszawska, Akademia Górniczo-Hutnicza"
+            },
+            {
+                "Title": "Przewidywanie parametrów walcowania na podstawie obrazów EBSD",
+                "Authors": "Maciej Tomczak",
+                "Affiliation": "Narodowe Centrum Badań Jądrowych"
+            },
+            {
+                "Title": "Ekstrakcja informacji z szeregu czasowego w procesie odwiertów EDM",
+                "Authors": "Tomasz Jażdżewski, Krzysztof Regulski, Adam Bułka, Paweł Malara, Marcin Trajer, Adrian Czeszkiewicz",
+                "Affiliation": "Akademia Górniczo-Hutnicza, Politechnika Warszawska, Sieć Badawcza Łukasiewicza – Instytut Lotnictwa"
+            },
+            {
+                "Title": "Grafowe sieci neuronowe w inżynierii materiałowej: wprowadzenie i studia przypadków",
+                "Authors": "Maciej Krzywda",
+                "Affiliation": "Akademia Górniczo-Hutnicza"
+            },
+            {
+                "Title": "Ocena możliwości zastosowania sztucznej inteligencji do sterowania procesem odsiarczania surówki żelaza",
+                "Authors": "Angelika Podolska",
+                "Affiliation": "Akademia Górniczo-Hutnicza"
+            },
+            {
+                "Title": "Wykorzystanie algorytmów genetycznych do wyznaczenia rozkładu temperatur i parametrów procesu zgrzewania tarciowego",
+                "Authors": "Radosław Winiczenko, Instytut Inżynierii Mechanicznej",
+                "Affiliation": "Inżynierii Produkcji, Szkoła Główna Gospodarstwa Wiejskiego"
+            }
+        ]
+    },
+    {
+        "Year": 2022,
+        "Title": "24. Seminarium NeuroMet2022",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122",
+        "Date": "21 kwietnia 2022",
+        "Presentations": [
+          {
+            "Title": "SUSTAIN 4.0 – inicjatywa zrównoważonego przemysłu 4.0. Analiza branży poligraficznej i opakowaniowej",
+            "Authors": "K. Krystosiak",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Sterowanie procesem produkcji aluminiowej puszki napojowej z wykorzystaniem modeli interaktywnych drzew regresyjnych i klasyfikacyjnych",
+            "Authors": "W. Baran",
+            "Affiliation": "CanPack/Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wykorzystanie neuronowo-rozmytego algorytmu ANFIS do modelowania zachowania plastycznego płynięcia metali w procesie odkształcania na gorąco",
+            "Authors": "K. Pasierbiewicz, B. Mrzygłód, A. Łukaszek-Sołek, I. Olejarczyk-Wożeńska",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Metamodelowanie ewolucji mikrostruktury i naprężenia uplastyczniającego podczas termomechanicznej obróbki stopu Ti-17",
+            "Authors": "Ł. Sztangret, D. Szeliga, P. Macioł, F. Miller Branco Ferraz, R. H. Buzolin, P. dos Santos Effertz, A. Krumphals, M. Cecilia Poletti",
+            "Affiliation": "Akademia Górniczo-Hutnicza, TU GRAZ"
+          },
+          {
+            "Title": "Modele predykcji temperatury zgrzewania liniowego opracowane w oparciu o pomiary z pirometru z zastosowaniem sieci konwolucyjnych",
+            "Authors": "K. Klimczak, J. Kusiak, K. Regulski, Ł. Rauch, K. Bzowski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Optymalizacja wielokryterialna z zastosowaniem ewolucji różnicowej oraz elementów teorii gier dla wybranych zagadnień inżynierii mechanicznej",
+            "Authors": "A. Długosz, T. Schlieter",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "MiViA – Approach for autonomous metallographic analysis of steels",
+            "Authors": "G. Korpała, M. Corcoran, J. Schneider, R. Rostami, U. Prahl",
+            "Affiliation": "Institute of Metal Forming, TU Bergakademie Freiberg, Germany"
+          },
+          {
+            "Title": "Model matematyczny miękki procesu kształtowania profilu zamkniętego w technologii RTH",
+            "Authors": "A. Kochański, H. Sadłowska",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Parametryzacja geometrii aluminiowych profili wyciskanych na gorąco",
+            "Authors": "A. Kochański, H. Sadłowska, A. Cena, P. Grzegorzewski, Ł. Morawiński",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Ocena wadliwości wyrobów tłoczonych z zastosowaniem testowania hipotez statystycznych",
+            "Authors": "P. Wójcik, H. Sadłowska",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Modelowanie regułowe struktury odlewów z żeliwa ADI",
+            "Authors": "A. Soroczyński, R. Biernacki, A. Kochański",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Imputacja danych streamingowych",
+            "Authors": "A. Kochański, S. Pawlak, M. Samordak, S. Kowalik",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Prezentacja dla uczczenia ponad 45-letniego dorobku naukowego i zawodowego Profesora Jana Kusiaka i 25 lat Seminarium NeuroMet",
+            "Authors": "Ł. Rauch, D. Szeliga, M. Pernach, M. Pietrzyk, K. Regulski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2021,
+        "Title": "23. Seminarium NeuroMet2021",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie",
+        "Date": "22 kwietnia 2021",
+        "Presentations": [
+          {
+            "Title": "Zastosowanie koncepcji Big Data w procesie kontroli jakości profili giętych",
+            "Authors": "K. Bzowski, Ł. Rauch, K. Regulski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Kompresja danych a metauczenie",
+            "Authors": "M. Blachnik, T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Rozpoznawanie i segmentacja mikrostruktur stali bainitycznych w oparciu o konwolucyjne sieci neuronowe",
+            "Authors": "K. Klimczak, R. Kuziak, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza, Instytu Metalurgii Żelaza"
+          },
+          {
+            "Title": "Badania właściwości mechanicznych stali 13MnSiCr7 z wykorzystaniem danych cyfrowej korelacji obrazu.",
+            "Authors": "M. Kempny, R. Rozmus",
+            "Affiliation": "Sieć Badawcza Łukasiewicz Instytut Metalurgii Żelaza"
+          },
+          {
+            "Title": "Problematyka wyboru zmiennych do opracowania metodyki diagnozowania przyczyn powstawania wad wyrobów na podstawie zaawansowanego modelowania opartego na dużych zbiorach danych",
+            "Authors": "A. Okuniewska, M. Perzyk",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Wielofazowe modelowanie rozmyte w technologii hydroformowania RTH",
+            "Authors": "H. Sadłowska, A. Kochański, P. Grzegorzewski",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Modelowanie procesu wyciskania współbieżnego profili ze stopów aluminium serii 6xxx",
+            "Authors": "A. Kochański",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Optymalizacja kształtu wspornika amortyzatora samochodowego przy użyciu optymalizacji hybrydowej",
+            "Authors": "W. Kuś, P. Sebastjan",
+            "Affiliation": "Politechnika Śląska"
+          }
+        ]
+      },
+      {
+        "Year": 2018,
+        "Title": "22. Seminarium NeuroMet2018",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "12 kwietnia 2018",
+        "Presentations": [
+          {
+            "Title": "Generowanie reprezentatywnych elementów objętościowych reprezentujących materiały kompozytowe o dowolnym rozkładzie orientacji fazy wzmacniającej",
+            "Authors": "W. Ogierman",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Wykorzystanie algorytmu ANFIS (Adaptive Neuro-Fuzzy Inference System) do przewidywania mikrostruktury żeliwa wermikularnego",
+            "Authors": "B. Mrzygłód, D. Wilk-Kołodziejczyk, K. Regulski, A. Smolarek",
+            "Affiliation": "Akademia Górniczo-Hutnicza, Politechnika Łódzka"
+          },
+          {
+            "Title": "Deep Learning w rozpoznawaniu mikrostruktur metali",
+            "Authors": "B. Mulewicz, K. Klimczak, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wielokryterialna optymalizacja porowatych układów termomechanicznych",
+            "Authors": "T. Schlieter, A. Długosz",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Modelowanie procesu RPH (Rapid Profile Hydroforming)",
+            "Authors": "A. Kochański, H. Sadłowska",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Poszukiwanie nowych, stabilnych konfiguracji płaskich sieci atomów o predefiniowanych własnościach mechanicznych",
+            "Authors": "A. Mrozek, W. Kuś",
+            "Affiliation": "Akademia Górniczo-Hutnicza, Politechnika Śląska"
+          },
+          {
+            "Title": "Inteligentna analityka danych w Przemyśle 4.0",
+            "Authors": "M. Perzyk, J. Kozłowski",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Technologiczna wiedza dziedzinowo-zależna integrowana z użyciem semantycznej analizy dokumentów i modelowania semantycznego",
+            "Authors": "K. Regulski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Nowe operatory mutacji w ewolucyjnym harmonogramowaniu produkcji",
+            "Authors": "P. Ciepliński, S. Golak",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Metamodelowanie procesu reformingu celem optymalizacji kosztów produkcji",
+            "Authors": "K. Skóra, Ł. Rauch",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2017,
+        "Title": "21. Seminarium NeuroMet2017",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122",
+        "Date": "20 kwietnia 2017",
+        "Presentations": [
+          {
+            "Title": "Wpływ dyskretyzacji danych na jakość generowanych reguł",
+            "Authors": "A. Soroczyński",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Wydobywanie wiedzy z nauczonych sieci neuronowych",
+            "Authors": "T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Głębokie uczenie w przewidywaniu awarii maszyn",
+            "Authors": "B. Mulewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Jak oszacować dokładność modelu predykcyjnego bez jego budowy. Metauczenie przez kompresję danych",
+            "Authors": "M. Blachnik",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Zastosowanie sieci neuronowych do rozwiązywania zagadnień polowych",
+            "Authors": "S. Golak, T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Symulacje hybrydowe w czasie rzeczywistym - wybrane zagadnienia",
+            "Authors": "W. Mucha, W. Kuś",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Obecne trendy i wyzwania w projektowaniu procesów metalurgicznych",
+            "Authors": "Ł. Rauch",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie mechanizmów Industry 4.0 w dziedzinie medycyny na przykładzie współpracy Kliniki Pulmonologii UJ CM oraz KISiM AGH",
+            "Authors": "A. Opaliński",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Sztuczne sieci neuronowe w systemie analizującym trwałość narzędzi kuźniczych",
+            "Authors": "B. Mrzygłód, M. Hawryluk",
+            "Affiliation": "Akademia Górniczo-Hutnicza, Politechnika Wrocławska"
+          },
+          {
+            "Title": "(Meta)modelowanie - wybrane metody i przykłady zastosowań",
+            "Authors": "Ł. Sztangret, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Rozwój analizy odwrotnej w zastosowaniu do identyfikacji modeli materiałów",
+            "Authors": "D. Szeliga, D. Bachniak, M. Pietrzyk, Ł. Rauch",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wnioskowanie z uwzględnianiem semantyki danych",
+            "Authors": "G. Rojek, K. Regulski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Cyfrowa reprezentacja materiału - aktualny stan badań i nowe wyzwania",
+            "Authors": "Ł. Madej, K. Perzyński, M. Sitko, A. Legwand",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "NeuroMet z perspektywy XX lat",
+            "Authors": "J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2016,
+        "Title": "20. Seminarium NeuroMet2016",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "12 maja 2016",
+        "Presentations": [
+          {
+            "Title": "Eksploracja danych produkcyjnych w hucie stali dla identyfikacji przyczyn powstawania wad w wyrobach",
+            "Authors": "Agnieszka Rodziewicz",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Optymalizacja parametrów siatki elementów skończonych za pomoc algorytmu MISQP",
+            "Authors": "Marcin Hatłas",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Zastosowanie analizy odwrotnej w zagadnieniach identyfikacji parametrów modelu plastyczności kryształów",
+            "Authors": "Adam Legwand, Łukasz Madej",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Poszukiwanie optymalnej sieci neuronowej z wykorzystaniem algorytmu genetycznego oraz architektur sprzętowych wysokiej wydajności",
+            "Authors": "Grzegorz Górecki, Łukasz Rauch, Maciej Pietrzyk, Jan Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wspomaganie wyboru technologicznych wariantów produkcji z zastosowaniem metod i formalizmów sztucznej inteligencji",
+            "Authors": "Dorota Wilk-Kołodziejczyk",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wielokryterialna optymalizacja procesów o strukturze drzewiastej",
+            "Authors": "Jan Kusiak, Paweł Morkisz, Piotr Oprocha, Wojciech Pietrucha, Łukasz Sztangret",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Ewolucyjna optymalizacja procesów metalurgicznych w czasie rzeczywistym z wykorzystaniem mikrokontrolera ARM",
+            "Authors": "Adam Mrozek, Łukasz Sztangret, Wacław Kuś",
+            "Affiliation": "Akademia Górniczo-Hutnicza, Politechnika Śląska"
+          }
+        ]
+      },
+      {
+        "Year": 2015,
+        "Title": "19. Seminarium NeuroMet2015",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "23 kwietnia 2015",
+        "Presentations": [
+          {
+            "Title": "Wieloskalowe modelowanie tkanki kostnej",
+            "Authors": "Przemysław Makowski",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Wykorzystanie architektur wysokiej wydajności do metamodelowania procesów i cykli przetwarzania metali",
+            "Authors": "Łukasz Rauch, Jan Kusiak, Maciej Pietrzyk",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Budowanie metamodeli dla problemów odwrotnych z wykorzystaniem wiedzy na temat monotoniczności przedziałów problemów wprost",
+            "Authors": "Grzegorz Górecki, Łukasz Rauch, Maciej Pietrzyk",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie metod wizualizacji do monitorowania warunków procesu wytwarzania",
+            "Authors": "Andrzej Kochański, Piotr Czyżewski",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Metoda sterowania jakością nawoju w procesie konfekcjonowania etykiet termokurczliwych",
+            "Authors": "Krzysztof Krystosiak",
+            "Affiliation": "Politechnika Białostocka"
+          },
+          {
+            "Title": "Strategia optymalizacji ciągów produkcyjnych o strukturze grafowej",
+            "Authors": "Piotr Jarosz, Jan Kusiak, Stanisław Małecki, Piotr Oprocha, Łukasz Sztangret",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2014,
+        "Title": "18. Seminarium NeuroMet2014",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "24 kwietnia 2014",
+        "Presentations": [
+          {
+            "Title": "Projekt systemu ekspertowego do oceny efektywności kopalń węgla",
+            "Authors": "Tadeusz Wieczorek, Sławomir Golak",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Poszukiwanie nowych, płaskich odmian alotropowych węgla przy użyciu hybrydowego algorytmu optymalizacji",
+            "Authors": "Adam Mrozek, Wacław Kuś",
+            "Affiliation": "Akademia Górniczo-Hutnicza, Politechnika Śląska"
+          },
+          {
+            "Title": "Sterowanie procesem wytwarzania odlewów z ADI",
+            "Authors": "Andrzej Kochański",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Systemy wspierania decyzji w zakresie rozpoznawania wad odlewniczych",
+            "Authors": "Gabriel Rojek, Krzysztof Regulski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Moduł generowania reguł w systemie CAPCAST",
+            "Authors": "Barbara Mrzygłód",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie klasteryzacji sztucznych sieci neuronowych w procesie identyfikacji parametrów modeli materiałowych",
+            "Authors": "Grzegorz Górecki, Łukasz Rauch",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wielowymiarowe charakterystyki profili osobowych społeczeństw wirtualnych",
+            "Authors": "Andrzej Opaliński",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2013,
+        "Title": "17. Seminarium NeuroMet2013",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "18 kwietnia 2013",
+        "Presentations": [
+          {
+            "Title": "Archipelag sztucznej inteligencji",
+            "Authors": "Ryszard Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Opracowanie komputerowego systemu wspomagania optymalizacji cykli produkcyjnych w przeróbce plastycznej metali",
+            "Authors": "A. Legwand, K. Perzyński, Ł. Madej, M. Pietrzyk",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Identyfikacja defektów materiałowych z wykorzystaniem metamodelowania na podstawie wyników analizy termograficznej",
+            "Authors": "Ł. Rauch, M. Gulik, K. Wojtczak, M. Pietrzyk",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie modeli inteligencji obliczeniowej w zagadnieniach SPC",
+            "Authors": "Jacek Kozłowski",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Jak wydajnie analizować duże zbiory danych?",
+            "Authors": "Marcin Blachnik",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Molekularne modele materiałów polikrystalicznych",
+            "Authors": "Adam Mrozek, Tadeusz Burczyński",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Optymalizacja w wieloskalowych zagadnieniach termosprężystych",
+            "Authors": "Adam Długosz, Tadeusz Burczyński",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Przewidywanie temperatury spustu stali z pieca łukowego z wykorzystaniem metod sztucznej inteligencji",
+            "Authors": "Tadeusz Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Generowanie reguł wiedzy inżynierskiej na podstawie zarejestrowanych przypadków produkcji odlewniczej",
+            "Authors": "Artur Soroczyński",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Metody sztucznej inteligencji w zastosowaniu do klasyfikacji wad typu zgorzelina występujących w walcowni gorącej blach",
+            "Authors": "Szymon Lechwar",
+            "Affiliation": "ArcelorMittal"
+          }
+        ]
+      },
+      {
+        "Year": 2012,
+        "Title": "16. Seminarium NeuroMet2012",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "26 kwietnia 2012",
+        "Presentations": [
+          {
+            "Title": "Modelowanie przemian fazowych w stalach za pomocą sztucznych sieci neuronowych",
+            "Authors": "Łukasz Sztangret",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Próba wtórnego wykorzystania danych pomiarowych do budowy modelu procesu i systemu sterowania obiektem przemysłowym",
+            "Authors": "Gabriel Rojek",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Modelowanie własności żeliwa ADI z wykorzystaniem danych niepewnych",
+            "Authors": "Marta Kłębczyk, Andrzej Kochański",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Classical and nonclassical methods in modelling of atomistic clusters",
+            "Authors": "Tadeusz Burczyński, Adam Mrozek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Zastosowanie analizy szeregów czasowych do kontroli i sterowania procesem wytopu żeliwa",
+            "Authors": "Marcin Perzyk",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Biblioteka metod optymalizacji - możliwości i przykłady zastosowań",
+            "Authors": "Wacław Kuś",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Hybrydowy system komputerowy do optymalizacji i metamodelowania procesów i cykli produkcyjnych",
+            "Authors": "Łukasz Rauch",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zintegrowane wspomaganie decyzji z użyciem modeli ontologicznych",
+            "Authors": "Krzysztof Regulski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2011,
+        "Title": "15. Seminarium NeuroMet2011",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "28 kwietnia 2011",
+        "Presentations": [
+          {
+            "Title": "Fenomen odporności na uszkodzenia obserwowany w sztucznych sieciach neuronowych",
+            "Authors": "Ryszard Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Rozszerzona analiza wyników modelowania matematycznego miękkiego",
+            "Authors": "Jacek Kozłowski",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Wybrane formalizmy reprezentacji wiedzy jako narzędzia inżynierii i zarządzania wiedzą w procesach odlewniczych",
+            "Authors": "Krzysztof Regulski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "System klasyfikacji złomu przeznaczonego do roztapiania w piecu łukowym z wykorzystaniem komputerowej analizy obrazu",
+            "Authors": "Tadeusz Wieczorek, Marcin Pilarczyk",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Opracowanie modeli do prognozowania parametrów procesu topienia wsadu w piecu łukowym",
+            "Authors": "Tadeusz Wieczorek, Krystian Mączka",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Metamodelowanie ciągu walcowniczego dla celów identyfikacji własności walcowanego metalu",
+            "Authors": "Łukasz Sztangret, Jan Kusiak, Maciej Pietrzyk",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2010,
+        "Title": "14. Seminarium NeuroMet2010",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "22 kwietnia 2010",
+        "Presentations": [
+          {
+            "Title": "Nowe podejście do stosowania logiki rozmytej",
+            "Authors": "Jacek Pietraszek",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Przygotowanie danych - czyszczenie danych w zastosowaniu do danych z wytopu i obróbki cieplnej żeliwa ADI",
+            "Authors": "Andrzej Kochański, Marta Kłębczyk",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Wpływ przygotowania danych - czyszczenia danych na jakość modelowania",
+            "Authors": "Andrzej Kochański, Jacek Kozłowski",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "System klasyfikacji złomu przeznaczonego do roztapiania w piecu łukowym z wykorzystaniem komputerowej analizy obrazu",
+            "Authors": "Tadeusz Wieczorek, Marcin Pilarczyk",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Wspomaganie procesu topienia złomu w piecu łukowym poprzez predykcję wybranych parametrów procesu z wykorzystaniem sieci neuronowych",
+            "Authors": "Tadeusz Wieczorek, Krystian Mączka",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Przewidywanie zachowań ludzi przy użyciu sieci neuronowych",
+            "Authors": "Ryszard Tadeusiewicz, Marcin Wosinek",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Modelowanie wybranych parametrów procesu rafinacji stali z wykorzystaniem metod sztucznej inteligencji",
+            "Authors": "T. Wieczorek, P. Świtała",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Zastosowanie technik sztucznej inteligencji w analizie odwrotnej",
+            "Authors": "Ł. Sztangret, D. Szeliga, J. Kusiak, M. Pietrzyk",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Odporne metody uczenia sztucznych sieci neuronowych",
+            "Authors": "A. Stanisławczyk",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2009,
+        "Title": "13. Seminarium NeuroMet2009",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "23 kwietnia 2009",
+        "Presentations": [
+          {
+            "Title": "Segmentacja obrazów mikrostruktur materiałowych za pomocą sieci PCNN",
+            "Authors": "Ł. Łukasik, Ł. Rauch",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie sieci neuronowych do optymalizacji procesu roztapiania złomu w piecu łukowym",
+            "Authors": "T. Wieczorek, K. Mączka",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Predykcja wpływu parametrów odlewania stali na własności odlewanych wlewków ciągłych z wykorzystaniem metod inteligencji obliczeniowej",
+            "Authors": "T. Wieczorek, R. Kurzacz",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Wykorzystanie sieci neuronowych do predykcji węgla, krzemu i manganu w procesie rafinacji stali w piecokadzi",
+            "Authors": "T. Wieczorek, P. Świtała",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Inteligentny System Ekspertowy przeznaczony do zarządzania procesem produkcji stali w warunkach elektrostalowni z piecami łukowymi",
+            "Authors": "T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Nowe trendy w neurocybernetyce",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Metodyka przygotowania danych do zadań eksploracji",
+            "Authors": "A. Kochański",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Porównanie modeli regresyjnych wykorzystujących maszyny wektorów wspierających (SVM) oraz sztuczne sieci neuronowe",
+            "Authors": "M. Perzyk",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Strategie optymalizacji w analizie procesu wytopu miedzi w piecu zawiesinowym",
+            "Authors": "Ł. Sztangret, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2008,
+        "Title": "12. Seminarium NeuroMet2008",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "24 kwietnia 2008",
+        "Presentations": [
+          {
+            "Title": "Kolejna metoda informatyczna inspirowana przez Naturę - algorytmy genetyczne",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Generowanie nieregularnego planu doświadczenia na powierzchni zakrzywionej z użyciem współrzędnych krzywoliniowych",
+            "Authors": "J. Pietraszek",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Modelowanie procesu roztapiania złomu w piecu łukowym z wykorzystaniem komputerowej analizy danych przemysłowych oraz sieci neuronowych",
+            "Authors": "T. Wieczorek, K. Mączka",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Opracowanie metody wyznaczania stanów równowagi termodynamicznej w czasie rzeczywistym",
+            "Authors": "J. Falkus, M. Skalski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wykorzystanie metod inteligencji obliczeniowej do przewidywania ilości dodatków stopowych wymaganych do uzyskania odpowiedniego składu chemicznego produkowanej stali",
+            "Authors": "T. Wieczorek, P. Świtała",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Zastosowanie metod inteligencji obliczeniowej do określenia wpływu parametrów odlewania stali na własności odlewanych wlewków ciągłych",
+            "Authors": "T. Wieczorek, R. Kurzacz",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Wykorzystanie aproksymatorów neuronowych w pomiarach naprężeń własnych metodą Barkhausena",
+            "Authors": "T. Garstka",
+            "Affiliation": "Politechnika Częstochowska"
+          },
+          {
+            "Title": "Sztuczne systemy immunologiczne w klasyfikacji i analizie danych",
+            "Authors": "M. Bereta, T. Burczyński",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Stosowalność drzew decyzyjnych w przemyśle wytwórczym",
+            "Authors": "M. Perzyk, R. Biernacki, A. Soroczyński",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Wykorzystanie sieci neuronowych w analizie pracy sieci gazowych średniego ciśnienia",
+            "Authors": "K. Kogut, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Sieci neuronowe w modelowaniu i optymalizacji procesów metalurgii miedzi",
+            "Authors": "A. Stanisławczyk, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2007,
+        "Title": "11. Seminarium NeuroMet2007",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "26 kwietnia 2007",
+        "Presentations": [
+          {
+            "Title": "Co nowego wiemy o naturze ludzkiego intelektu?",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Systemy reguł prototypowych",
+            "Authors": "M. Blachnik, T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Porównanie regresyjnych modeli procesów produkcyjnych opartych na systemach uczących się",
+            "Authors": "M. Perzyk, R. Biernacki",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Analiza danych przemysłowych z wykorzystaniem drzew decyzji i sieci neuronowych",
+            "Authors": "K. Mączka, T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Preprocesing danych ze sterowników pieca łukowego dla systemów neuronowych",
+            "Authors": "R. Kurzacz, T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Zastosowanie metod probabilistycznych do przewidywania pęknięć w próbie SICO",
+            "Authors": "A. Śledzińska, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Ekstrakcja cech ze zdjęć złomu w celu przygotowania zbiorów uczących dla sieci neuronowych",
+            "Authors": "M. Pilarczyk, T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Sztuczne systemy immunologiczne w optymalizacji kształtu",
+            "Authors": "W. Kuś, T. Burczyński",
+            "Affiliation": "Politechnika Śląska"
+          }
+        ]
+      },
+      {
+        "Year": 2006,
+        "Title": "10. Seminarium NeuroMet2006",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "20 kwietnia 2006",
+        "Presentations": [
+          {
+            "Title": "Sieci Hopfield'a - niesłusznie zapomniane narzędzie neuroinformatyki",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Porównanie metod statystycznych i wykorzystujących sztuczne sieci neuronowe w analizie znaczenia i współdziałania parametrów procesów technologicznych",
+            "Authors": "M. Perzyk",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Propozycja platformy typu e-Collaboration dla branży plastycznej przeróbki metali, opartej o technologie sieci semantycznych",
+            "Authors": "Ł. Rauch, P. Macioł",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Możliwości wykorzystania systemu IFS do zarządzania procesem wytapiania stali w elektrycznym piecu łukowym",
+            "Authors": "T. Wieczorek, M. Letun",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Sterowanie położeniem elektrod stalowniczego pieca łukowego z wykorzystaniem sztucznych sieci neuronowych",
+            "Authors": "T. Wieczorek, K. Mączka",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Neuronowy model procesu rafinacji stali w piecokadzi",
+            "Authors": "T. Wieczorek, P. Świtała",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Modelowanie złożonych procesów metalurgicznych z wykorzystaniem dynamicznych sieci neuronowych",
+            "Authors": "A. Stanisławczyk, J. Talar, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2005,
+        "Title": "9. Seminarium NeuroMet2005",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "14 kwietnia 2005",
+        "Presentations": [
+          {
+            "Title": "Powrót do korzeni. Sieci neuronowe jako narzędzie rozumienia i poznania ludzkiego umysłu",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Rozpoznawanie twarzy jako wstęp do budowy sytemu identyfikacji osób",
+            "Authors": "R. Marcinek, K. Kurnik",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Analiza obrazów powierzchni w procesie tarcia ślizgowego",
+            "Authors": "Z. Rudnicki, Z. Mikrut",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wykrywanie przyczyn powstawania wad odlewów",
+            "Authors": "A. Kochański",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Aspekty metodologiczne i realizacyjne budowy systemu informacyjnego dla potrzeb przemysłu metalowego",
+            "Authors": "E. Nawarecki, G. Dobrowolski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie metod sztucznej inteligencji w modelowaniu procesu wytopu miedzi",
+            "Authors": "A. Śledzińska, J. Talar, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie sieci neuronowych do wyboru wejść systemu, którego poszukiwany jest model matematyczny",
+            "Authors": "W. Mitkowski, M. Długosz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Systemy informacyjne w sieciach rozległych jako narzędzie wspomagania decyzji w przemyśle metalurgicznym",
+            "Authors": "Ł. Rauch",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Strategia rozbudowy planu doświadczenia w przypadku aproksymatora neuronowego",
+            "Authors": "J. Pietraszek",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Metody komputerowej analizy obrazu w detekcji i rozpoznawaniu obiektów monitorowanych",
+            "Authors": "K. Kurnik, R. Marcinek",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Zastosowanie sieci Kohonena do generowania finansowych strategii transakcyjnych",
+            "Authors": "R. Domaradzki, J. Morajda",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2004,
+        "Title": "8. Seminarium NeuroMet2004",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "15 kwietnia 2004",
+        "Presentations": [
+          {
+            "Title": "Czy po erze przetwarzania i rozpoznawania sygnałów nadejdzie epoka ich automatycznego rozumienia",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Próby liczbowej oceny degeneracji materiału oczek ciągadeł przy użyciu metod komputerowej analizy obrazów",
+            "Authors": "Z. Rudnicki, W. Figiel, J. Daca",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Modelowanie procesów produkcyjnych za pomocą naiwnego klasyfikatora Bayesa i sztucznych sieci neuronowych",
+            "Authors": "M. Perzyk, R. Biernacki",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Filtrowanie danych pomiarowych przy wykorzystaniu analizy falkowej i sztucznych sieci neuronowych",
+            "Authors": "Ł. Rauch, J. Talar, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie sztucznych sieci neuronowych do filtrowania przemysłowej bazy danych",
+            "Authors": "P. Pietrzkiewicz, J. Falkus, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Monitorowanie procesu wytapiania stali w piecu łukowym z zastosowaniem hybrydowego systemu ekspertowego",
+            "Authors": "T. Wieczorek, M. Pyka",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Zastosowanie sztucznych sieci neuronowych do określania wartości współczynnika tarcia w procesach tłoczenia",
+            "Authors": "F. Stachowicz, T. Trzepieciński",
+            "Affiliation": "Politechnika Rzeszowska"
+          },
+          {
+            "Title": "Wirtotechnologia",
+            "Authors": "J. Suchy",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2003,
+        "Title": "7. Seminarium NeuroMet2003",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209",
+        "Date": "24 kwietnia 2003",
+        "Presentations": [
+          {
+            "Title": "Modelowanie pieca konwertorowego za pomocą sieci neuronowych - porównanie dwóch modeli",
+            "Authors": "W. Mitkowski, M. Długosz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Optymalne kształtowanie materiału wsadowego do kucia swobodnego (alg. ewolucyjny)",
+            "Authors": "T. Burczyński, W. Kuś",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Zastosowanie SSN do wyznaczania parametrów gięcia profili konstrukcyjnych",
+            "Authors": "P. Litwin, F. Stachowicz",
+            "Affiliation": "Politechnika Rzeszowska"
+          },
+          {
+            "Title": "Wykrywanie przyczyn wad w odlewach na podstawie istotności względnych sygnałów wejściowych sieci neuronowej",
+            "Authors": "M. Perzyk, A. Kochański, J. Kozłowski",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Zastosowanie algorytmu ekstrakcji wiedzy z sieci neuronowej na przykładzie procesu cynkowania ogniowego",
+            "Authors": "S. Golak, F. Grosman, T. Wieczorek",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "System ekspertowy DAX",
+            "Authors": "Z. Polański, J. Pietraszek, R. Górecka",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Analiza sekwencji obrazów niejednorodnych",
+            "Authors": "Z. Rudnicki",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowania sieci Hopfielda.",
+            "Authors": "J. Grabska-Chrząstowska",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2002,
+        "Title": "6. Seminarium NeuroMet2002",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie",
+        "Date": "",
+        "Presentations": [
+          {
+            "Title": "Sztuczna inteligencja jako narzędzie do odkrywania nowych faktów w pozornie wyeksploatowanych danych badawczych",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie dynamicznych sieci neuronowych",
+            "Authors": "M. Długosz, W. Mitkowski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Indukcja drzew decyzyjnych w zagadnieniu uczenia się maszyn na przykładzie algorytmu Quinlana",
+            "Authors": "J. Talar",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Statyczny model konwertora tlenowego oparty o sztuczną sieć neuronową",
+            "Authors": "J. Falkus, P. Pietrzykiewicz, W. Pietrzyk, J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Sztuczne sieci neuronowe w modelowaniu przemian fazowych w stalach",
+            "Authors": "B. Pawłowski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wybrane metody przetwarzania i analizy cech obrazów teksturowych",
+            "Authors": "Z. Rudnicki",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2001,
+        "Title": "5. Seminarium NeuroMet2001",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie",
+        "Date": "",
+        "Presentations": [
+          {
+            "Title": "Sztuczna inteligencja to nie tylko sieci neuronowe",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie algorytmów genetycznych w optymalnym kształtowaniu ciał sprężysto-plastycznych",
+            "Authors": "T. Burczyński",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Zastosowanie sztucznej sieci neuronowej do analizy wpływu parametrów procesu cynkowania ogniowego na własności mechaniczne blach",
+            "Authors": "S. Golak, F. Grosman",
+            "Affiliation": "Politechnika Śląska"
+          },
+          {
+            "Title": "Nowe zastosowania sztucznych sieci neuronowych w odlewnictwie",
+            "Authors": "M. Perzyk, A. Kochański",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Zastosowania sieci neuronowych do sterowania i analizy węzła głównego CO AGH",
+            "Authors": "K. Kołek, W. Mitkowski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Inteligentne planowanie eksperymentu",
+            "Authors": "Z. Polański",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Zastosowanie algorytmów genetycznych do optymalizacji parametrów krzywych umocnienia",
+            "Authors": "J. Talar, D. Szyndler",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Sztuczna sieć neuronowa jako narzędzie do filtrowania wyników pomiarów",
+            "Authors": "J. Kusiak, J. Gawąd, S. Ciszewski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 2000,
+        "Title": "4. Seminarium NeuroMet2000",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie",
+        "Date": "",
+        "Presentations": [
+          {
+            "Title": "Problemy optymalizacji struktury modelu neuronowego",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Uwagi o optymalnym doborze struktury sieci neuronowej",
+            "Authors": "K. Kołek, W. Mitkowski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie sieci neuronowych do klasyfikacji jakości wlewków w procesie ciągłego odlewania stali",
+            "Authors": "W. Zalecki",
+            "Affiliation": "Instytut Metalurgii Żelaza"
+          },
+          {
+            "Title": "Zastosowanie sztucznej sieci neuronowej do oceny wpływu pierwiastków domieszkowych na własności mechaniczne wyrobów stalowych",
+            "Authors": "D. Svyetlichnyy",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wykorzystanie sztucznych sieci neuronowych do prognozowania trwałości elementów metalowych z uwzględnieniem procesu zmęczenia",
+            "Authors": "L. Bukowski",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Neuronowy klasyfikator danych w procesie wykrawania blach",
+            "Authors": "L. Moszczyński",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Identyfikacja planu doświadczenia dla aproksymacji neuronowej",
+            "Authors": "J. Pietraszek, Z. Polański, R. Górecka",
+            "Affiliation": "Politechnika Krakowska"
+          }
+        ]
+      },
+      {
+        "Year": 1999,
+        "Title": "3. Seminarium NeuroMet1999",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie",
+        "Date": "",
+        "Presentations": [
+          {
+            "Title": "Samoorganizujące się sieci neuronowe jako nowa metoda wizualizacji złożonych zbiorów danych",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "O modelowaniu dynamiki sieciami neuronowymi",
+            "Authors": "W. Mitkowski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Aproksymacja neuronowa metodą sekwencyjnej modyfikacji danych",
+            "Authors": "Z. Polański, J. Pietraszek, R. Górecka",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Wybrane problemy przygotowania danych i uczenia sztucznych sieci neuronowych",
+            "Authors": "D. Svyetlichnyy",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Przewidywanie własności żeliwa sferoidalnego za pomocą sztucznych sieci neuronowych",
+            "Authors": "A. Kochański, M. Perzyk",
+            "Affiliation": "Politechnika Warszawska"
+          },
+          {
+            "Title": "Zastosowanie sztucznych sieci neuronowych do badania wpływu składu chemicznego i parametrów obróbki cieplno-plastycznej na mikrostrukturę i własności mechaniczne wyrobów stalowych",
+            "Authors": "J. Kusiak, R. Kuziak, W. Zalecki",
+            "Affiliation": "Akademia Górniczo-Hutnicza, Instytut Metalurgii Żelaza"
+          },
+          {
+            "Title": "Zastosowanie sztucznych sieci neuronowych do statycznego sterowania procesem konwertorowym",
+            "Authors": "J. Falkus, W. Wajda, P. Pietrzykiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 1998,
+        "Title": "2. Seminarium NeuroMet1998",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie",
+        "Date": "",
+        "Presentations": [
+          {
+            "Title": "Nowe metody uczenia w sztucznych sieciach neuronowych",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Problemy modelowania procesów dynamicznych z wykorzystaniem różnych technik sieci neuronowych",
+            "Authors": "J. Korbicz",
+            "Affiliation": "Uniwersytet Zielonogórski"
+          },
+          {
+            "Title": "Przykłady zastosowania sztucznych sieci neuronowych w sterowaniu",
+            "Authors": "W. Mitkowski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Aproksymacja neuronowa w zastosowaniach ograniczających liczebność danych uczących",
+            "Authors": "Z. Polański, J. Pietraszek",
+            "Affiliation": "Politechnika Krakowska"
+          },
+          {
+            "Title": "Możliwości zastosowania SSN do modelowania i sterowania walcowaniem blach grubych",
+            "Authors": "K. Dudek, D. Svyetlichnyy, P. Liszka",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowania sztucznych sieci neuronowych w metalurgii i inżynierii materiałowej - rok później",
+            "Authors": "J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      },
+      {
+        "Year": 1997,
+        "Title": "1. Seminarium NeuroMet1997",
+        "Location": "Akademia Górniczo-Hutnicza w Krakowie",
+        "Date": "",
+        "Presentations": [
+          {
+            "Title": "Wprowadzenie do sieci neuronowych",
+            "Authors": "R. Tadeusiewicz",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Zastosowanie sztucznych sieci neuronowych w sterowaniu",
+            "Authors": "W. Mitkowski",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Wybrane przykłady zastosowania sztucznych sieci neuronowych w inżynierii materiałowej i metalurgii",
+            "Authors": "J. Kusiak",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          },
+          {
+            "Title": "Neural nets for prediction and optimisation of temperature fields",
+            "Authors": "A. Kos",
+            "Affiliation": "Akademia Górniczo-Hutnicza"
+          }
+        ]
+      }
+  
+]
