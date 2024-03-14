@@ -1,5 +1,5 @@
-<div class="container-fluid" style="padding-top: 100px; padding-bottom: 60px;"> 
-  <div class="row justify-content-center align-items-center" style="min-height: calc(100vh - 160px);"> 
+<div class="container-fluid" style="padding-top: 100px; padding-bottom: 60px;">
+  <div class="row justify-content-center align-items-center" style="min-height: calc(100vh - 160px);">
     <div class="col">
       <div class="card shadow-2-strong" style="border-radius: 15px;">
         <div class="card-body p-4 p-md-5 text-center" style="overflow-y: auto; max-height: 600px;">
@@ -12,14 +12,19 @@
           </div>
           <ul class="list-group list-group-flush text-start">
             <li *ngFor="let archive of filteredSeminarArchives" class="list-group-item" (click)="selectArchive(archive)">
-              <h6>{{ archive.year }}: {{ archive.title }}</h6>
+              <h6>{{ archive.title }}</h6>
               <p>Lokalizacja: {{ archive.location }}</p>
-              <p>Data: {{ archive.date' }}</p>
+              <p>Data: {{ archive.date }}</p>
               <div *ngIf="selectedArchive === archive">
                 <h6>Prezentacje:</h6>
-                <ul>
-                  <li *ngFor="let presentation of archive.presentations">
-                    {{ presentation.title }} by {{ presentation.authors }} ({{ presentation.affiliation }})
+                <ul class="list-unstyled">
+                  <li *ngFor="let presentation of archive.presentations" style="margin-bottom: 10px;">
+                    <div>
+                      <br><strong>{{ presentation.title }}</strong><br>
+                      {{ presentation.authors }}<br>
+                      ({{ presentation.affiliation }})
+                    </div>
+                    <br>
                   </li>
                 </ul>
               </div>
